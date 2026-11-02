@@ -1,0 +1,214 @@
+/* every page */
+
+body {
+	margin: 0;
+	background: black url("starts.jpg") center / cover fixed;
+	color: white;
+	font-family: Arial, sans-serif;
+}
+
+/* home page only */
+.home {
+	overflow: hidden;
+}
+.scene {
+	position: relative;
+	height: 100vh;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+/* the thin orbit circles */
+.ring {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	border: 1px solid rgba(150, 170, 255, 0.3);
+	border-radius: 50%;
+}
+.ring1 { width: 500px;  height: 500px; }
+.ring2 { width: 750px;  height: 750px; }
+.ring3 { width: 1050px; height: 1050px; }
+
+/* big faded Earth behind the title */
+.earth {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	width: 420px;
+	height: 420px;
+	border-radius: 50%;
+	opacity: 0.55;
+}
+
+/* little Mars sitting on an orbit ring */
+.mars {
+	position: absolute;
+	top: calc(50% - 115px);
+	left: calc(50% - 375px);
+	width: 30px;
+	height: 30px;
+	border-radius: 50%;
+}
+
+/* the words and button */
+.text {
+	position: relative;
+	text-align: center;
+}
+.home h1 {
+	margin: 0;
+	font-size: 64px;
+	font-weight: 300;
+	letter-spacing: 16px;
+}
+.home .subtitle {
+	margin: 15px 0 40px 0;
+	font-size: 14px;
+	letter-spacing: 5px;
+	text-transform: uppercase;
+}
+.button {
+	background: #3b4a7a;
+	color: white;
+	border: none;
+	padding: 15px 35px;
+	font-size: 14px;
+	letter-spacing: 3px;
+	text-transform: uppercase;
+	cursor: pointer;
+}
+.button:hover {
+	background: #55669e;
+}
+
+/*space page*/
+.space {
+	padding: 40px 20px
+	text-align: centre;
+}
+
+.space h1 {
+	margin: 0 0 10px 0;
+	font-size: 56px;
+	font-weight: 300;
+	letter-spacing: 16px;
+}
+
+.space h2 {
+	margin: 50px 0 20px 0;
+	font-size: 18px;
+	font-weight: 300;
+	letter-spacing: 6px;
+	text-transform: uppercase;
+}
+
+.space .subtitle {
+	font-size: 14px;
+	letter-spacing: 4px;
+	text-transform: uppercase;
+}
+
+/* each planet: no box, just the picture and its name */
+.planet {
+	display: inline-block;
+	margin: 0 20px;
+	color: white;
+	text-decoration: none;
+	font-size: 13px;
+	letter-spacing: 3px;
+	text-transform: uppercase;
+}
+
+.planet img {
+	display: block;
+	width: 150px;
+	height: 150px;
+	object-fit: cover;
+	border-radius: 50%;
+	margin-bottom: 10px;
+	transition: transform 0.3s;
+}
+
+/* planets grow a little when you hover over them */
+.planet:hover img {
+	transform: scale(1.1);
+}
+
+/* planet pages */
+.planet-page {
+	padding: 40px 20px;
+	text-align: center;
+}
+
+.planet-page h1 {
+	margin: 0 0 30px 0;
+	font-size: 56px;
+	font-weight: 300;
+	letter-spacing: 16px;
+	text-transform: uppercase;
+}
+
+/* keeps the writing from stretching too wide */
+.planet-page .content {
+	max-width: 750px;
+	margin: 0 auto;
+}
+
+.planet-page .intro {
+	font-size: 17px;
+	line-height: 1.7;
+	text-align: center;
+	margin-bottom: 40px;
+}
+
+/* the facts table */
+.facts {
+	margin: 0 auto 40px auto;
+	border-collapse: collapse;
+	background: rgba(0, 0, 0, 0.5);
+}
+.facts th {
+	padding: 15px;
+	font-size: 16px;
+	font-weight: 300;
+	letter-spacing: 5px;
+	text-transform: uppercase;
+	border-bottom: 1px solid rgba(150, 170, 255, 0.5);
+}
+.facts td {
+	padding: 12px 25px;
+	border-bottom: 1px solid rgba(150, 170, 255, 0.2);
+	text-align: center;
+}
+.facts td:first-child {
+	letter-spacing: 2px;
+	text-transform: uppercase;
+	font-size: 13px;
+	color: #b8c4ff;
+}
+
+.planet-page .caption {
+	font-size: 14px;
+	letter-spacing: 3px;
+	text-transform: uppercase;
+}
+
+.planet-page .compare {
+	display: block;
+	width: 100%;
+	height: 300px;
+	object-fit: contain;
+	margin: 0 auto 40px auto;
+}
+
+/* the Home / Space / Next buttons */
+.nav {
+	display: flex;
+	justify-content: center;
+	gap: 15px;
+	flex-wrap: wrap;
+}
