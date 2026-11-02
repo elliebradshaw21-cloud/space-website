@@ -17,3 +17,5 @@ A personal project I built in my own time to practise the skills I learnt in uni
 - Using one stylesheet across every page
 - Debugging CSS: I traced a styling problem back to a single typo that stopped later rules from loading
 
+## View my website
+- https://elliebradshaw21-cloud.github.io/space-website/
